@@ -64,7 +64,7 @@ should be a deployment key.
 Generate a deployment key as follows:
 
 ```bash
-$ ssh-keygen -t rsa -b 4096 -C "${git config user.email}" -f gh-pages -N ""
+$ ssh-keygen -t rsa -b 4096 -C "build-docs" -f gh-pages -N ""
 # Creates the files:
 # - gh-pages (private SSH key)
 # - gh-pages.pub (public key)
