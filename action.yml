@@ -1,0 +1,23 @@
+name: 'Build Docs'
+description: 'Build documentation'
+author: 'shareforcelegal'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+inputs:
+  emptyCommits:
+    description: 'If empty commits should be made to the documentation'
+    required: false
+    default: 'true'
+  username:
+    description: 'Set git user.name'
+    required: false
+  useremail:
+    description: 'Set git user.email'
+    required: false
+  siteUrl:
+    description: 'Base URL for site containing documentation; defaults to determining from repository organization.'
+    required: false
+    default: ''
